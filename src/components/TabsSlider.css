@@ -1,13 +1,13 @@
 button {
   border: none;
   font: inherit;
-  background-color: hsl(240, 11%, 95.5%);
+  background-color: #f5f5f7;
 }
 
 .tabs-slider-container {
+  gap: 0.4rem;
   display: flex;
   justify-content: center;
-  gap: 0.4rem;
 }
 
 .heading {
