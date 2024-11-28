@@ -1,0 +1,73 @@
+button {
+  border: none;
+  font: inherit;
+  background-color: hsl(240, 11%, 95.5%);
+}
+
+.tabs-slider-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+  margin-top: 65px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  margin-bottom: 36px;
+  margin-top: 132px;
+}
+
+.tab-button {
+  position: relative;
+  border-radius: 9999px;
+  padding: 0.5625rem 1.125rem;
+  font-size: 0.915rem;
+  font-weight: 450;
+  color: rgb(0, 0, 0);
+  transition: all 0.2s;
+}
+
+.tab-bubble {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background: white;
+  mix-blend-mode: exclusion;
+  border-radius: 9999px;
+}
+
+.images-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.images-container .image {
+  margin-top: 4vh;
+  overflow: hidden;
+  border-radius: 10px;
+  max-width: 1090px !important;
+  width: 100%;
+  height: auto;
+  max-height: 681px;
+  aspect-ratio: 1090/681 !important;
+}
+.images-container .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1140px) {
+  .container {
+    padding: 0 1.2rem;
+  }
+}/*# sourceMappingURL=TabsSlider.css.map */

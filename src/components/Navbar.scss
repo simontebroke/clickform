@@ -1,0 +1,44 @@
+.navbar {
+  background: #f5f5f7;
+
+  .navbarContainer {
+    background: #f5f5f7;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 423423;
+    .logoItem {
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 12.31px;
+      font-weight: 500;
+      line-height: 14.69px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+    .linksItem {
+      display: flex;
+      flex-direction: row;
+      gap: 34px;
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.71px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+    }
+  }
+}
