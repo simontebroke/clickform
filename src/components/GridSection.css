@@ -160,4 +160,13 @@
     max-height: 939px;
     height: 100%;
   }
+}
+@media only screen and (max-width: 725px) {
+  .gridSection .pricingGrid .pricingGridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 140px;
+    gap: 14px;
+    justify-items: center;
+  }
 }/*# sourceMappingURL=GridSection.css.map */

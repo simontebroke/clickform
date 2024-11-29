@@ -7,8 +7,13 @@ button {
 .tabs-slider-container {
   gap: 0.4rem;
   display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
   justify-content: center;
-  overflow: hidden;
+}
+.tabs-slider-container::-webkit-scrollbar {
+  display: none;
 }
 
 .heading {
@@ -70,5 +75,10 @@ button {
 @media only screen and (max-width: 1140px) {
   .container {
     padding: 0 1.2rem;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .tabs-slider-container {
+    justify-content: flex-start;
   }
 }/*# sourceMappingURL=TabsSlider.css.map */
