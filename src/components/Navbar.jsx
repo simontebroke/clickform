@@ -3,14 +3,17 @@ import { useState, useEffect } from "react";
 
 function Navbar() {
   const [navClassName, setNavClassName] = useState("res--navbar");
+  const [isOpen, setIsOpen] = useState(false);
 
   function toggleNavbar() {
     if (navClassName === "res--navbar") {
       setNavClassName("res--navbar res--navbar-visible");
       document.body.classList.add("no-scroll");
+      setIsOpen(!isOpen);
     } else {
       setNavClassName("res--navbar");
       document.body.classList.remove("no-scroll");
+      setIsOpen(!isOpen);
     }
   }
 
@@ -42,7 +45,14 @@ function Navbar() {
           <div className="shareItem">
             <img src="/share.svg" alt="Share" />
             {isMobile ? (
-              <img src="/menu.svg" alt="Share" onClick={toggleNavbar} />
+              // <img src="/menu.svg" alt="Share" onClick={toggleNavbar} />
+              <div
+                className={`menu-icon ${isOpen ? "open" : ""}`}
+                onClick={toggleNavbar}
+              >
+                <span></span>
+                <span></span>
+              </div>
             ) : (
               ""
             )}
@@ -50,26 +60,11 @@ function Navbar() {
         </div>
       </div>
       <div className={navClassName}>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
-        <p>dwq</p>
+        <hr className="navLine" />
+        <p className="res--nav-item">Research</p>
+        <p className="res--nav-item">Research</p>
+        <p className="res--nav-item">Research</p>
+        <p className="res--nav-item">Research</p>
       </div>
     </>
   );
