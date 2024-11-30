@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [navClassName, setNavClassName] = useState("res--navbar");
@@ -34,7 +35,9 @@ function Navbar() {
         <div className="navbarContainer">
           <div className="logoItem">
             <img src="/logo.svg" alt="Logo" />
-            <p>MyWebNow</p>
+            <NavLink className="nav-link" to={"/"}>
+              <p>MyWebNow</p>
+            </NavLink>
           </div>
           <div className="linksItem">
             <p>Research</p>

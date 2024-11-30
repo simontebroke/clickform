@@ -38,10 +38,7 @@ function EmblaCarousel(props) {
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
               {/* NavLink für jede Slide */}
-              <NavLink
-                to={`/${index}`} // Ziel-Route basierend auf dem Index
-                className="embla__slide__link"
-              >
+              <NavLink to={`/design${index}`} className="embla__slide__link">
                 <div
                   className="embla__slide__image"
                   style={{ backgroundImage: `url('/${index}.jpg')` }}

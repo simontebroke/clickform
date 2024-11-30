@@ -1,0 +1,107 @@
+.footer {
+  padding: 0 1.2rem 32px;
+  .footer-grid {
+    max-width: 1090px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    margin: 0 auto;
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 19px;
+      .footer-item {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        &.footer-headline {
+          color: #616161;
+        }
+      }
+    }
+  }
+  .lower-footer {
+    max-width: 1090px;
+    display: flex;
+    margin: 0 auto;
+    gap: 11px;
+    margin-top: 125px;
+    display: flex;
+    flex-direction: column;
+    .langButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      background-color: #fff;
+      padding: 8px 14px;
+      .buttonText {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19.89px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+      border-radius: 5px;
+      width: fit-content;
+    }
+    .bottom-footer-sec {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: row;
+      .icons {
+        display: flex;
+        gap: 32px;
+      }
+      p {
+        color: #707070;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.56px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        span {
+          text-decoration: underline;
+          text-decoration-color: #c0c0c5;
+          text-decoration-thickness: 1.5px;
+          text-underline-offset: 1px;
+          margin-left: 24px;
+          color: #1d1d1f;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .footer .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .footer-headline {
+    margin-top: 50px;
+  }
+  .bottom-footer-sec {
+    flex-direction: column-reverse !important;
+    gap: 43px;
+    margin-top: 43px;
+  }
+  .langButton {
+    width: 100% !important;
+  }
+  .lower-footer {
+    margin-top: 0px !important;
+  }
+}
