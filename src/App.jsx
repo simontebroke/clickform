@@ -27,7 +27,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/appledesign" element={<Page1 />} />
+        <Route path="/1" element={<Page1 />} />
+        <Route path="/2" element={<Page1 />} />
+        <Route path="/3" element={<Page1 />} />
+        <Route path="/4" element={<Page1 />} />
+        <Route path="/5" element={<Page1 />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>

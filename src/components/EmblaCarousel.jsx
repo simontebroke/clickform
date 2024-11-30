@@ -9,6 +9,7 @@ import {
   useSelectedSnapDisplay,
 } from "./EmblaCarouselSelectedSnapDisplay";
 import useEmblaCarousel from "embla-carousel-react";
+import { NavLink } from "react-router-dom";
 
 function EmblaCarousel(props) {
   const { slides, options } = props;
@@ -36,25 +37,31 @@ function EmblaCarousel(props) {
         <div className="embla__container">
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
-              <div
-                className="embla__slide__image"
-                style={{ backgroundImage: `url('/${index}.jpg')` }}
-                alt=""
+              {/* NavLink für jede Slide */}
+              <NavLink
+                to={`/${index}`} // Ziel-Route basierend auf dem Index
+                className="embla__slide__link"
               >
-                <p className="company">
-                  {index == 1
-                    ? "Apple"
-                    : index == 2
-                    ? "Starbucks"
-                    : index == 3
-                    ? "IKEA"
-                    : "Product"}
-                </p>
-                <p className="logo">fe</p>
-                <p className="description">
-                  Very modern looking site with clean grey and white tones.
-                </p>
-              </div>
+                <div
+                  className="embla__slide__image"
+                  style={{ backgroundImage: `url('/${index}.jpg')` }}
+                  alt=""
+                >
+                  <p className="company">
+                    {index === 1
+                      ? "Apple"
+                      : index === 2
+                      ? "Starbucks"
+                      : index === 3
+                      ? "IKEA"
+                      : "Product"}
+                  </p>
+                  <p className="logo">fe</p>
+                  <p className="description">
+                    Very modern looking site with clean grey and white tones.
+                  </p>
+                </div>
+              </NavLink>
             </div>
           ))}
         </div>
