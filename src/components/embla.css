@@ -8,6 +8,7 @@
 .embla__viewport {
   overflow: hidden;
 }
+
 .embla__container {
   display: flex;
   touch-action: pan-y pinch-zoom;
@@ -71,6 +72,12 @@
 }
 .embla__slide:nth-child(2) {
   flex: 0 0 33.2%;
+}
+.embla__slide:nth-child(3) .embla__slide__image {
+  background: #1f70c1;
+}
+.embla__slide:nth-child(5) .embla__slide__image {
+  background: #cb5d19;
 }
 .embla__slide:nth-child(3) {
   flex: 0 0 33.2%;

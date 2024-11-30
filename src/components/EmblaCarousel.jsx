@@ -38,10 +38,11 @@ function EmblaCarousel(props) {
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
               {/* NavLink für jede Slide */}
-              <NavLink to={`/design${index}`} className="embla__slide__link">
+              <NavLink to={`/design${index}`} className="nav-link">
                 <div
+                  key={index}
                   className="embla__slide__image"
-                  style={{ backgroundImage: `url('/${index}.jpg')` }}
+                  style={{ backgroundImage: `url('/design${index}.png')` }}
                   alt=""
                 >
                   <p className="company">
@@ -53,7 +54,18 @@ function EmblaCarousel(props) {
                       ? "IKEA"
                       : "Product"}
                   </p>
-                  <p className="logo">fe</p>
+                  <img
+                    src={
+                      {
+                        1: "/apple.svg",
+                        2: "/starbucks.svg",
+                        3: "/ibm.svg",
+                        4: "/ikea.svg",
+                      }[index] || "Product"
+                    }
+                    alt=""
+                    className="logo"
+                  />
                   <p className="description">
                     Very modern looking site with clean grey and white tones.
                   </p>

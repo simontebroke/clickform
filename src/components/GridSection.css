@@ -115,6 +115,7 @@
   align-items: center;
   gap: 33px;
   flex-direction: column;
+  padding: 15px;
   height: 377px;
   margin-bottom: 161px;
   border-radius: 4px;
@@ -168,5 +169,11 @@
     margin-bottom: 140px;
     gap: 14px;
     justify-items: center;
+  }
+}
+@media only screen and (max-width: 385px) {
+  .gridSection .tryBox .boxText {
+    font-size: 30px;
+    line-height: 37px;
   }
 }/*# sourceMappingURL=GridSection.css.map */

@@ -80,4 +80,13 @@
   .sectionOne .topGridContainer .gridItem {
     max-width: 400px;
   }
+}
+@media only screen and (max-width: 640px) {
+  .sectionOne .heading {
+    font-size: 27px;
+    line-height: 35px;
+  }
+  .sectionOne .heading.quote {
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=SectionOne.css.map */
