@@ -76,11 +76,14 @@ body.no-scroll {
           text-decoration-skip-ink: none;
   padding-left: 20px;
 }
-.res--navbar .navLine {
-  z-index: 482394832948233250000000000000000000;
+.res--navbar hr.navLine {
+  z-index: 9999;
   background: #e3e3e3;
-  width: 100vw !important;
+  border: none;
   height: 1px;
+  width: 100vw;
+  margin: 0;
+  position: relative;
 }
 
 .res--navbar p {
