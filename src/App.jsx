@@ -6,19 +6,31 @@ import GridSection from "./components/GridSection";
 import TabsSlider from "./components/TabsSlider";
 import EmblaCarousel from "./components/EmblaCarousel";
 import "./components/embla.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Page1 from "./components/Page1";
+
+function Home() {
+  return (
+    <>
+      <StartSection />
+      <EmblaCarousel slides={[1, 2, 3, 4, 5]} />
+      <TabsSlider />
+      <SectionOne />
+      <GridSection />
+    </>
+  );
+}
 
 function App() {
   return (
-    <>
-      <div className="App">
-        <Navbar />
-        <StartSection />
-        <EmblaCarousel slides={[1, 2, 3, 4, 5]} />
-        <TabsSlider />
-        <SectionOne />
-        <GridSection />
-      </div>
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/appledesign" element={<Page1 />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </Router>
   );
 }
 
