@@ -116,7 +116,48 @@
 
 @media only screen and (max-width: 430px) {
   .searchText {
-    width: 305px;
+    width: 315px;
     overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .searchText {
+    width: 303px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .searchText {
+    width: 294px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .searchText {
+    width: 284px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .searchText {
+    width: 274px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .searchText {
+    width: 264px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .searchText {
+    width: 254px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .searchText {
+    width: 244px;
   }
 }
