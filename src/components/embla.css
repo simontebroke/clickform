@@ -77,7 +77,11 @@
   background: #1f70c1;
 }
 .embla__slide:nth-child(5) .embla__slide__image {
-  background: #cb5d19;
+  background: #df0023;
+}
+
+.embla__slide:nth-child(1) .embla__slide__image {
+  background: #1d1d1f;
 }
 .embla__slide:nth-child(3) {
   flex: 0 0 33.2%;
