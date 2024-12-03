@@ -90,16 +90,18 @@
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .startSection .startSectionContainer .mainHeading {
+    max-width: 500px;
+    line-height: 54px;
+    margin-bottom: 30px;
+  }
+}
 @media only screen and (max-width: 550px) {
   .searchText {
     width: 325px;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-  .startSection .startSectionContainer .mainHeading {
-    max-width: 500px;
-    line-height: 54px;
-    margin-bottom: 30px;
   }
   .startSection .startSectionContainer .searchItem {
     max-width: 400px;
@@ -149,6 +151,9 @@
   .searchText {
     width: 264px;
   }
+  .startSection .startSectionContainer .mainHeading {
+    font-size: 50px;
+  }
 }
 
 @media only screen and (max-width: 370px) {
@@ -160,5 +165,8 @@
 @media only screen and (max-width: 360px) {
   .searchText {
     width: 244px;
+  }
+  .startSection .startSectionContainer .mainHeading {
+    font-size: 47px;
   }
 }

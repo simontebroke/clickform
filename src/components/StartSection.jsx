@@ -56,7 +56,7 @@ function StartSection() {
     <div className="startSection">
       <div className="startSectionContainer">
         <div className="headingItem">
-          <h1 className="mainHeading">Ask ChatGPT anything</h1>
+          <h1 className="mainHeading">Deine Website in einem Schritt</h1>
         </div>
         <div className="searchItem">
           <p className="searchText">
