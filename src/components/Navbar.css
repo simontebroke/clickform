@@ -44,6 +44,9 @@
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
 }
+.navbar .navbarContainer .shareItem {
+  cursor: pointer;
+}
 
 body.no-scroll {
   overflow: hidden;

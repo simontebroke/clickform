@@ -29,16 +29,35 @@ function Navbar() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const handleShare = () => {
+    if (navigator.share) {
+      navigator
+        .share({
+          title: "MyWebNow",
+          text: "MyWebNow - Check it out!",
+          url: "https://clickform.vercel.app",
+        })
+        .then(() => {
+          console.log("Shared successfully!");
+        })
+        .catch((error) => {
+          console.error("Error sharing:", error);
+        });
+    } else {
+      alert("Web Share API is not supported in your browser.");
+    }
+  };
+
   return (
     <>
       <div className="navbar">
         <div className="navbarContainer">
-          <div className="logoItem">
-            <img src="/logo.svg" alt="Logo" />
-            <NavLink className="nav-link" to={"/"}>
+          <NavLink className="nav-link" to={"/"}>
+            <div className="logoItem">
+              <img src="/logo.svg" alt="Logo" />
               <p>MyWebNow</p>
-            </NavLink>
-          </div>
+            </div>
+          </NavLink>
           <div className="linksItem">
             <p>Research</p>
             <p>Research</p>
@@ -46,15 +65,14 @@ function Navbar() {
             <p>Research</p>
           </div>
           <div className="shareItem">
-            <img src="/share.svg" alt="Share" />
+            <img src="/share.svg" alt="Share" onClick={handleShare} />
             {isMobile ? (
               // <img src="/menu.svg" alt="Share" onClick={toggleNavbar} />
-              <div
-                className={`menu-icon ${isOpen ? "open" : ""}`}
-                onClick={toggleNavbar}
-              >
-                <span></span>
-                <span></span>
+              <div className="clickRadius" onClick={toggleNavbar}>
+                <div className={`menu-icon ${isOpen ? "open" : ""}`}>
+                  <span></span>
+                  <span></span>
+                </div>
               </div>
             ) : (
               ""
