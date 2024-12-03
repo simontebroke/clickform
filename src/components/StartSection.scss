@@ -94,6 +94,7 @@
   .searchText {
     width: 325px;
     overflow: hidden;
+    text-overflow: ellipsis;
   }
   .startSection .startSectionContainer .mainHeading {
     max-width: 500px;
