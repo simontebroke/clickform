@@ -122,7 +122,7 @@ body.no-scroll {
 
 .menu-icon span {
   display: block;
-  height: 1.5px;
+  height: 0.1px;
   width: 100%;
   background: #1d1d1f;
   border-radius: 1.5px;
@@ -132,7 +132,6 @@ body.no-scroll {
 /* Animation für das "X" */
 .menu-icon.open span:nth-child(1) {
   transform: rotate(45deg) translate(3.1px, 3.1px);
-  height: 1px;
 }
 
 .menu-icon.open span:nth-child(2) {
