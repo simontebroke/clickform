@@ -61,6 +61,7 @@ function EmblaCarousel(props) {
                         2: "/starbucks.svg",
                         3: "/ibm.svg",
                         4: "/ikea.svg",
+                        5: "/bauhaus.svg",
                       }[index] || "Product"
                     }
                     alt=""
