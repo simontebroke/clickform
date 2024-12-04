@@ -126,7 +126,7 @@ body.no-scroll {
 
 .menu-icon span {
   display: block;
-  height: 1.5px;
+  height: 1.5px !important;
   width: 100%;
   background: #1d1d1f;
   border-radius: 1.5px;
