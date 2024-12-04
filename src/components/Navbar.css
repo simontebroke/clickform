@@ -132,6 +132,12 @@ body.no-scroll {
   border-radius: 1.5px;
   transition: all 0.3s ease;
 }
+.menu-icon span:nth-child(1) {
+  height: 1.5px;
+}
+.menu-icon span:nth-child(2) {
+  height: 1.5px;
+}
 
 /* Animation für das "X" */
 .menu-icon.open span:nth-child(1) {

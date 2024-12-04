@@ -127,6 +127,12 @@ body.no-scroll {
   background: #1d1d1f;
   border-radius: 1.5px;
   transition: all 0.3s ease;
+  &:nth-child(1) {
+    height: 1.5px;
+  }
+  &:nth-child(2) {
+    height: 1.5px;
+  }
 }
 
 /* Animation für das "X" */
