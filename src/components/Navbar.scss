@@ -127,17 +127,11 @@ body.no-scroll {
   background: #1d1d1f;
   border-radius: 1.5px;
   transition: all 0.3s ease;
-  &:nth-child(1) {
-    height: 2.1px;
-  }
-  &:nth-child(2) {
-    height: 2.1px;
-  }
 }
 
 /* Animation für das "X" */
 .menu-icon.open span:nth-child(1) {
-  transform: rotate(45deg) translate(2.9 px, 2.9px);
+  transform: rotate(45deg) translate(2.9px, 2.9px);
 }
 
 .menu-icon.open span:nth-child(2) {
