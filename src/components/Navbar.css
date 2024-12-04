@@ -141,7 +141,7 @@ body.no-scroll {
 
 /* Animation für das "X" */
 .menu-icon.open span:nth-child(1) {
-  transform: rotate(45deg) translate(3.1px, 3.1px);
+  transform: rotate(45deg) translate(2.9px, 2.9px);
 }
 
 .menu-icon.open span:nth-child(2) {
