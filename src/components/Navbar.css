@@ -114,6 +114,15 @@ body.no-scroll {
   position: relative;
   top: 6px;
 }
+.menu-icon:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: transparent;
+}
 
 .menu-icon span {
   display: block;
@@ -145,7 +154,7 @@ body.no-scroll {
   }
   .shareItem {
     display: flex;
-    gap: 10px;
+    gap: 20px;
   }
   .shareItem img:nth-child(2) {
     position: relative;
