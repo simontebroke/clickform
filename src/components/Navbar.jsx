@@ -65,7 +65,7 @@ function Navbar() {
             <p>Research</p>
           </div>
           <div className="shareItem">
-            <img src="/share2.svg" alt="Share" onClick={handleShare} />
+            <img src="/share3.svg" alt="Share" onClick={handleShare} />
             {isMobile ? (
               // <img src="/menu.svg" alt="Share" onClick={toggleNavbar} />
               <div className="clickRadius" onClick={toggleNavbar}>
