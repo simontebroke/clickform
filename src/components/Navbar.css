@@ -105,7 +105,7 @@ body.no-scroll {
 }
 
 .menu-icon {
-  width: 16px;
+  width: 17px;
   height: 10px;
   display: flex;
   flex-direction: column;
@@ -126,17 +126,17 @@ body.no-scroll {
 
 .menu-icon span {
   display: block;
-  height: 2px !important;
+  height: 2.1px !important;
   width: 100%;
   background: #1d1d1f;
   border-radius: 1.5px;
   transition: all 0.3s ease;
 }
 .menu-icon span:nth-child(1) {
-  height: 2px;
+  height: 2.1px;
 }
 .menu-icon span:nth-child(2) {
-  height: 2px;
+  height: 2.1px;
 }
 
 /* Animation für das "X" */
