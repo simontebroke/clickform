@@ -15,7 +15,7 @@ function Home() {
   return (
     <>
       <StartSection />
-      <EmblaCarousel slides={[1, 2, 3, 4, 5]} />
+      {/* <EmblaCarousel slides={[1, 2, 3, 4, 5]} />*/}
       <TabsSlider />
       <SectionOne />
       <GridSection />
